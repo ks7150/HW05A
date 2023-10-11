@@ -32,8 +32,8 @@ function draw() {
     let DEWP = data.get(i, "DEWP");
 
     let t = map(TEMP, TEMPMin, TEMPMax, 0, 1000);
-    let d = map(DEWP, DEWPMin, DEWPMax, 0, 1000);
-    rect(10, 10 , t, d)
+    let d = map(DEWP, DEWPMin, DEWPMax, 20, 800);
+    rect(0, 10 , t, d)
 
   }
   noLoop();
